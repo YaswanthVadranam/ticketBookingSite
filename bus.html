@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>tickets.in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Inter&family=Open+Sans&family=Poppins&family=Righteous&family=Roboto&family=Staatliches&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(assets/bus.jpg);
+        }
+        .topnav1 a.active {
+            background-color: #ff0002;
+            color: white;
+        }
+        .train-ticket h3 {
+            background-color: #ff0002;
+        }
+        .footer {
+            background-color: #ff0002;
+        }
+        button {
+            background-color: #ff0002;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <img style="float: left;" src="assets/rtc.png" alt="">
+        <div class="links">
+            <a href="index.html" class="logo">Tickets.in</a>
+            <a onclick="smoothScroll(document.getElementById('footer'))" href="#">Contact us</a>
+            <a onclick="document.getElementById('id02').style.display='block'" style="width:auto;" href="#">Register</a>
+            <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" href="#"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+        </div>
+    </div>
+    <div class="topnav1">
+        <a href="index.html"><i class="fa-solid fa-train-tram"></i> Trains</a>
+        <a class="active" href="bus.html"><i class="fa-solid fa-bus"></i> Buses</a>
+        <a href="flight.html"><i class="fa-solid fa-plane"></i> Flights</a>
+        <a href=""><i class="fa-solid fa-ellipsis"></i> More</a>
+    </div>
+    <div class="train-ticket">
+        <h3><i class="fa-solid fa-ticket"></i>  Book Ticket</h3>
+        <table>
+            <tr>
+                <td><i class="fa-solid fa-location-arrow"></i></td>
+                <td><input type="text" name="" id="" placeholder="From"></td>
+                <td><i style="margin-left: 20px;" class="fa-solid fa-calendar"></i></td>
+                <td><input type="text" name="" id="" placeholder="Date"></td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-location-dot"></i></td>
+                <td><input type="text" name="" id="" placeholder="To"></td>
+                <td><i style="margin-left: 20px;"  class="fa-solid fa-briefcase"></i></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">All Seats</option>
+                        <option value="">Window Seat</option>
+                        <option value="">Any Seat</option>
+                    </select>
+                </td>
+            </tr>
+            <td></td>
+            <td><input type="checkbox" name="" id="">Flexible with Date</td>
+            <td></td>
+            <td><input type="checkbox" name="" id="">Bus with Available Seat</td>
+            <td></td>
+            <tr>
+                <td></td>
+                <td><button>Search</button></td>
+            </tr>
+        </table>
+    </div>
+    <div style="margin-left: 30%; margin-right:30%; text-align: center; color: white;margin-bottom: 80px;">
+        <h4>INFORMATION</h4>
+        <p>Please check the arrival/departure time of booked bus from www.indianbus.gov.in, or call 139 for any changes</p>
+    </div>
+    <div id="footer" class="footer">
+        <h4>Contact us</h4>
+        <p>Email: yaswanthvadranam@gmail.com</p>
+        <p>Phone. No: 7815880408</p>
+        <p>LPU, Phagwara, Punjab</p>
+        <hr>
+        <p>© 2022 <a href="https://www.knsrinath.com">Kandula Naga Srinath</a>. All Rights Reserved.</p>
+    </div>
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img class="avatar" src="img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+        </form>
+      </div>
+      <div id="id02" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img class="avatar" src="img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="email"><b>E-Mail</b></label>
+            <input type="text" placeholder="E-Mail ID" name="email" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="pswr"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="pswr" required>
+              
+            <button type="submit">Signup</button>
+          </div>
+        </form>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>

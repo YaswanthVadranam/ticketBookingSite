@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>tickets.in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Inter&family=Open+Sans&family=Poppins&family=Righteous&family=Roboto&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav">
+        <img style="float: left;" src="assets/logo.png" alt="">
+        <div class="links">
+            <a href="index.html" class="logo">Tickets.in</a>
+            <a onclick="smoothScroll(document.getElementById('footer'))" href="#">Contact us</a>
+            <a onclick="document.getElementById('id02').style.display='block'" style="width:auto;" href="#">Register</a>
+            <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" href="#"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+        </div>
+    </div>
+    <div class="topnav1">
+        <a class="active" href="index.html"><i class="fa-solid fa-train-tram"></i> Trains</a>
+        <a href="bus.html"><i class="fa-solid fa-bus"></i> Buses</a>
+        <a href="flight.html"><i class="fa-solid fa-plane"></i> Flights</a>
+        <a href=""><i class="fa-solid fa-ellipsis"></i> More</a>
+    </div>
+    <div class="train-ticket">
+        <h3><i class="fa-solid fa-ticket"></i>  Book Ticket</h3>
+        <table>
+            <tr>
+                <td><i class="fa-solid fa-location-arrow"></i></td>
+                <td><input type="text" name="" id="" placeholder="From"></td>
+                <td><i style="margin-left: 20px;" class="fa-solid fa-calendar"></i></td>
+                <td><input type="text" name="" id="" placeholder="Date"></td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-location-dot"></i></td>
+                <td><input type="text" name="" id="" placeholder="To"></td>
+                <td><i style="margin-left: 20px;"  class="fa-solid fa-briefcase"></i></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">All Classes</option>
+                        <option value="">AC First Class (1A)</option>
+                        <option value="">AC 2 Tier (2A)</option>
+                        <option value="">AC 3 Tier (3A)</option>
+                        <option value="">Sleeper (SL)</option>
+                        <option value="">Second Sitting (2S)</option>
+                    </select>
+                </td>
+            </tr>
+            <td></td>
+            <td><input type="checkbox" name="" id="">Flexible with Date</td>
+            <td></td>
+            <td><input type="checkbox" name="" id="">Train with Available Berth</td>
+            <td></td>
+            <tr>
+                <td></td>
+                <td><button>Search</button></td>
+            </tr>
+        </table>
+    </div>
+    <div style="margin-left: 30%; margin-right:30%; text-align: center; color: white;margin-bottom: 80px;">
+        <h4>INFORMATION</h4>
+        <p>Please check the arrival/departure time of booked train from www.indianrail.gov.in, or call 139 for any changes</p>
+    </div>
+    <div class="holidays">
+        <h1>HOLIDAYS</h1>
+        <div>
+            <div class="row">
+                <div class="column" style="margin-left: 150px">
+                  <div class="content">
+                    <img src="assets/exterior.jpg" alt="Mountains" style="width:100%">
+                    <h3>Maharajas' Express</h3>
+                    <p style="padding:10px">Redefining Royalty, Luxury and Comfort, Maharajas' express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed”. It has been a winner of “World’s Leading Luxury train” by World Travel Awards consecutively for last six years.</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="content">
+                  <img src="assets/Bharat_Gaurav.jpg" alt="Lights" style="width:100%">
+                    <h3>Bharat Gaurav Tourist Train</h3>
+                    <p style="padding:10px">IRCTC operates Bharat Gaurav Tourist Train having AC III-Tier accommodation on train specially designed to promote domestic tourism in India. This train runs on various theme based circuits covering pilgrimage and heritage destinations in its itinerary on a 5 days to 20 days trip and showcase India’s rich cultural heritage.</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="content">
+                  <img src="assets/Manali.jpg" alt="Nature" style="width:100%">
+                    <h3>Rail Tour Packages</h3>
+                    <p style="padding:10px">IRCTC offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations are also available.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <h4>Contact us</h4>
+        <p>Email: yaswanthvadranam@gmail.com</p>
+        <p>Phone. No: 7815880408</p>
+        <p>LPU, Phagwara, Punjab</p>
+        <hr>
+        <p>© Copyright 2022 <a href="https://www.knsrinath.com">Kandula Naga Srinath</a>. All Rights Reserved.</p>
+    </div>
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img class="avatar" src="img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+        </form>
+      </div>
+      <div id="id02" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img class="avatar" src="img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="email"><b>E-Mail</b></label>
+            <input type="text" placeholder="E-Mail ID" name="email" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="pswr"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="pswr" required>
+              
+            <button type="submit">Signup</button>
+          </div>
+        </form>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
